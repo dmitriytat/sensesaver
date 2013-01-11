@@ -30,54 +30,44 @@
         {
             this.GoBtn = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.BookBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // GoBtn
             // 
             this.GoBtn.Location = new System.Drawing.Point(12, 12);
             this.GoBtn.Name = "GoBtn";
-            this.GoBtn.Size = new System.Drawing.Size(260, 23);
+            this.GoBtn.Size = new System.Drawing.Size(133, 23);
             this.GoBtn.TabIndex = 0;
-            this.GoBtn.Text = "Go";
+            this.GoBtn.Text = "Dictionary";
             this.GoBtn.UseVisualStyleBackColor = true;
             this.GoBtn.Click += new System.EventHandler(this.GoBtn_Click);
             // 
             // openFileDialog1
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.DefaultExt = "*.txt";
+            this.openFileDialog1.Filter = "txt files (*.txt)|*.txt";
             // 
-            // label1
+            // BookBtn
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 55);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Загружено слов:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(110, 55);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(13, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "0";
+            this.BookBtn.Location = new System.Drawing.Point(151, 12);
+            this.BookBtn.Name = "BookBtn";
+            this.BookBtn.Size = new System.Drawing.Size(121, 23);
+            this.BookBtn.TabIndex = 3;
+            this.BookBtn.Text = "Book";
+            this.BookBtn.UseVisualStyleBackColor = true;
+            this.BookBtn.Click += new System.EventHandler(this.BookBtn_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 86);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(284, 47);
+            this.Controls.Add(this.BookBtn);
             this.Controls.Add(this.GoBtn);
             this.Name = "Form1";
             this.Text = "SenseSaver Analiser";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -85,8 +75,7 @@
 
         private System.Windows.Forms.Button GoBtn;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button BookBtn;
     }
 }
 
